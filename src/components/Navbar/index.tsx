@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Grid } from '@material-ui/core';
 import bg from '../../images/asians-bg.svg';
-import { useSelector } from 'react-redux';
-import { ExhibitionState } from '../../redux/slices';
+import { useDispatch, useSelector } from 'react-redux';
+import { ExhibitionState, setSelectedExhibit } from '../../redux/slices';
 
 const Navbar = () => {
 
@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div style={{ width: '100%', marginTop: '1rem', position: 'relative', display: 'flex', flexDirection: 'row' }}>
             <div style={{ display: 'flex', flexDirection: 'row' }}>
-                {exhibits.map((item) => <NavItem name={item.name} selected={item.selected} />)}
+                {exhibits.map((item, index) => <NavItem name={item.name} selected={item.selected} index={index} />)}
             </div>
             <div style={{ position: 'absolute', top: 0, right: -25 }}>
                 <div style={{ background: '#EEEEEE', width: '14rem', height: '4rem', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
@@ -25,14 +25,21 @@ const Navbar = () => {
 
 interface NavItemProps {
     name: string,
-    selected?: boolean
+    selected?: boolean,
+    index: number
 }
 
-const NavItem = ({ name, selected }: NavItemProps) => {
+const NavItem = ({ name, selected, index }: NavItemProps) => {
 
     const textRef = React.useRef<HTMLDivElement>(null);
 
     const [selectedPos, setSelectedPos] = React.useState({ top: 0, left: 0 });
+
+    const dispatch = useDispatch();
+
+    const goTo = () => {
+        dispatch(setSelectedExhibit(index));
+    }
 
     React.useEffect(() => {
         if (textRef.current) {
@@ -42,8 +49,8 @@ const NavItem = ({ name, selected }: NavItemProps) => {
 
 
     return (
-        <div ref={textRef} style={{ marginLeft: '2rem', position: 'relative', cursor: 'pointer' }}>
-            <p style={{ fontSize: '1.875rem', fontFamily: 'Roboto', fontWeight: 300, color: selected ? '#222222' : '#D2D2D2' }}> {name} </p>
+        <div ref={textRef} onClick={goTo} style={{ marginLeft: '2rem', position: 'relative', cursor: 'pointer', userSelect: 'none' }}>
+            <p style={{ fontSize: '1.875rem', fontFamily: 'Roboto', fontWeight: 300, color: selected ? '#222222' : '#D2D2D2', userSelect: 'none' }}> {name} </p>
             {selected ? <div style={{ backgroundImage: `url(${bg})`, backgroundRepeat: 'no-repeat', width: '4rem', height: '4rem', backgroundSize: 'contain', position: 'absolute', top: selectedPos.top - 5, left: selectedPos.left - 10, zIndex: -1 }} /> : null}
         </div>
     );

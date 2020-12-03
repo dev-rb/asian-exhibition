@@ -2,7 +2,8 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface Art {
     image: string,
-    text: string
+    text: string,
+    index: number
 }
 
 export interface Exhibition {
@@ -27,6 +28,13 @@ export const exhibitionSlice = createSlice({
     initialState: initState,
     reducers: {
         setSelectedExhibit: (state: ExhibitionState, { payload }: PayloadAction<number>) => {
+            state.exhibits.forEach((item, index) => {
+                if(index !== payload){
+                    item.selected = false;
+                }else{
+                    item.selected = true;
+                }
+            })
             state.selectedExhibit = state.exhibits[payload];
         }
     }
