@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.583" height="65.791" viewBox="0 0 37.583 65.791">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #ff4b63;
+      }
+    </style>
+  </defs>
+  <g id="Group_21" data-name="Group 21" class="cls-1" transform="translate(-37.313 -13.786)">
+    <rect id="Rectangle_100" data-name="Rectangle 100" class="cls-2" width="3" height="56" rx="1.5" transform="translate(72.298 27.071) rotate(30)"/>
+    <rect id="Rectangle_106" data-name="Rectangle 106" class="cls-2" width="2" height="46" rx="1" transform="translate(72.35 38.74) rotate(30)"/>
+    <rect id="Rectangle_105" data-name="Rectangle 105" class="cls-2" width="4" height="67" rx="2" transform="translate(70.813 13.786) rotate(30)"/>
+  </g>
+</svg>
