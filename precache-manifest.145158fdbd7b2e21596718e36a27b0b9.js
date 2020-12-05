@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ddd703c2fa61881e9138f1635fa8302",
+    "revision": "b1caa2e6c74744458b9c2bfb70712282",
     "url": "/asian-exhibition/index.html"
   },
   {
-    "revision": "2cf325eaf4a9c58e4c7f",
+    "revision": "cb90c09f96ae1ee1592a",
     "url": "/asian-exhibition/static/css/main.3a3f2ca7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/asian-exhibition/static/js/2.74439f90.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2cf325eaf4a9c58e4c7f",
-    "url": "/asian-exhibition/static/js/main.387159e2.chunk.js"
+    "revision": "cb90c09f96ae1ee1592a",
+    "url": "/asian-exhibition/static/js/main.214f516e.chunk.js"
   },
   {
     "revision": "843c04b8cf02b620bdb8",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/asian-exhibition/static/media/asians-bg.31303fc9.svg"
   },
   {
-    "revision": "457a1bfbf78359fc58536ce31c5df8f0",
-    "url": "/asian-exhibition/static/media/cArt1.457a1bfb.jpg"
+    "revision": "5d119229d86298c7032c39ece5bd185d",
+    "url": "/asian-exhibition/static/media/cArt1.5d119229.jpg"
   },
   {
     "revision": "6aa4a91d88fff126cca4356aa13c7faf",
