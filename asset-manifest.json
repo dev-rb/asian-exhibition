@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/asian-exhibition/static/css/main.3a3f2ca7.chunk.css",
-    "main.js": "/asian-exhibition/static/js/main.214f516e.chunk.js",
-    "main.js.map": "/asian-exhibition/static/js/main.214f516e.chunk.js.map",
+    "main.js": "/asian-exhibition/static/js/main.163eae7e.chunk.js",
+    "main.js.map": "/asian-exhibition/static/js/main.163eae7e.chunk.js.map",
     "runtime-main.js": "/asian-exhibition/static/js/runtime-main.34f0cdce.js",
     "runtime-main.js.map": "/asian-exhibition/static/js/runtime-main.34f0cdce.js.map",
-    "static/js/2.74439f90.chunk.js": "/asian-exhibition/static/js/2.74439f90.chunk.js",
-    "static/js/2.74439f90.chunk.js.map": "/asian-exhibition/static/js/2.74439f90.chunk.js.map",
+    "static/js/2.5f2d31b4.chunk.js": "/asian-exhibition/static/js/2.5f2d31b4.chunk.js",
+    "static/js/2.5f2d31b4.chunk.js.map": "/asian-exhibition/static/js/2.5f2d31b4.chunk.js.map",
     "index.html": "/asian-exhibition/index.html",
-    "precache-manifest.145158fdbd7b2e21596718e36a27b0b9.js": "/asian-exhibition/precache-manifest.145158fdbd7b2e21596718e36a27b0b9.js",
+    "precache-manifest.875ad4503de3e11a984a7f63b26c3d98.js": "/asian-exhibition/precache-manifest.875ad4503de3e11a984a7f63b26c3d98.js",
     "service-worker.js": "/asian-exhibition/service-worker.js",
     "static/css/main.3a3f2ca7.chunk.css.map": "/asian-exhibition/static/css/main.3a3f2ca7.chunk.css.map",
-    "static/js/2.74439f90.chunk.js.LICENSE.txt": "/asian-exhibition/static/js/2.74439f90.chunk.js.LICENSE.txt",
+    "static/js/2.5f2d31b4.chunk.js.LICENSE.txt": "/asian-exhibition/static/js/2.5f2d31b4.chunk.js.LICENSE.txt",
     "static/media/asians-bg.svg": "/asian-exhibition/static/media/asians-bg.31303fc9.svg",
     "static/media/cArt1.jpg": "/asian-exhibition/static/media/cArt1.5d119229.jpg",
     "static/media/cArt2.jpg": "/asian-exhibition/static/media/cArt2.6aa4a91d.jpg",
@@ -19,7 +19,8 @@
     "static/media/exampleHouse.jpg": "/asian-exhibition/static/media/exampleHouse.9f3e5bc5.jpg",
     "static/media/fArt1.jpg": "/asian-exhibition/static/media/fArt1.08ed5685.jpg",
     "static/media/fArt2.jpg": "/asian-exhibition/static/media/fArt2.dabbc222.jpg",
-    "static/media/fExhibitWH.jpg": "/asian-exhibition/static/media/fExhibitWH.c69cd533.jpg",
+    "static/media/fArt3.jpg": "/asian-exhibition/static/media/fArt3.91630650.jpg",
+    "static/media/fExhibitWH.jpg": "/asian-exhibition/static/media/fExhibitWH.102cfced.jpg",
     "static/media/iArt1.jpg": "/asian-exhibition/static/media/iArt1.487682d8.jpg",
     "static/media/iArt2.jpg": "/asian-exhibition/static/media/iArt2.c6d4fad8.jpg",
     "static/media/iExhibitWH.jpg": "/asian-exhibition/static/media/iExhibitWH.95523080.jpg",
@@ -30,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.34f0cdce.js",
-    "static/js/2.74439f90.chunk.js",
+    "static/js/2.5f2d31b4.chunk.js",
     "static/css/main.3a3f2ca7.chunk.css",
-    "static/js/main.214f516e.chunk.js"
+    "static/js/main.163eae7e.chunk.js"
   ]
 }
