@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8c8550c6bb354aa846f34a19a95497f",
+    "revision": "a25ec866d35ec9e20da1035fd5641510",
     "url": "/asian-exhibition/index.html"
   },
   {
-    "revision": "e0c4cb76a3b7498651c2",
+    "revision": "1dad993b5378ccd10337",
     "url": "/asian-exhibition/static/css/main.3a3f2ca7.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/asian-exhibition/static/js/2.5f2d31b4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e0c4cb76a3b7498651c2",
-    "url": "/asian-exhibition/static/js/main.163eae7e.chunk.js"
+    "revision": "1dad993b5378ccd10337",
+    "url": "/asian-exhibition/static/js/main.8fe0740d.chunk.js"
   },
   {
     "revision": "843c04b8cf02b620bdb8",
