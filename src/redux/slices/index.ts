@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { ChineseArt, FilipinoArt, IndianArt, JapaneseArt } from "../../images";
 
 export interface Art {
     image: string,
@@ -9,7 +10,7 @@ export interface Art {
 export interface Exhibition {
     name: string,
     selected: boolean,
-    art?: Art[],
+    art: Art[],
     design?: string
 }
 
@@ -19,8 +20,8 @@ export interface ExhibitionState {
 }
 
 const initState: ExhibitionState = {
-    exhibits: [{ name: 'Japanese', selected: true }, { name: 'Chinese', selected: false }, { name: 'Indian', selected: false }, { name: 'Filipino', selected: false }],
-    selectedExhibit: { name: 'Japanese', selected: true }
+    exhibits: [{ name: 'Chinese', selected: true, art: ChineseArt, design: 'cExhibitWH.jpg' }, { name: 'Japanese', selected: false, art: JapaneseArt, design: 'jExhibitWH.jpg' }, { name: 'Indian', selected: false, art: IndianArt, design: 'iExhibitWH.jpg' }, { name: 'Filipino', selected: false, art: FilipinoArt, design: 'fExhibitWH.jpg' }],
+    selectedExhibit: { name: 'Chinese', selected: true, art: ChineseArt, design: 'cExhibitWH.jpg' }
 }
 
 export const exhibitionSlice = createSlice({
@@ -29,9 +30,9 @@ export const exhibitionSlice = createSlice({
     reducers: {
         setSelectedExhibit: (state: ExhibitionState, { payload }: PayloadAction<number>) => {
             state.exhibits.forEach((item, index) => {
-                if(index !== payload){
+                if (index !== payload) {
                     item.selected = false;
-                }else{
+                } else {
                     item.selected = true;
                 }
             })
