@@ -26,20 +26,20 @@ const ArtView = () => {
         <div style={{ width: '40%', height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', border: '2px solid #EEEEEE' }}>
             {/* Image */}
             <div style={{ display: 'flex', alignSelf: 'center', justifyContent: 'center', minHeight: '40%', maxHeight: '40%', marginTop: '2rem' }}>
-                <img src={require(`../../images/${selectedExhibit.art[currentArt].image}.jpg`)} style={{ width: '70%', height: 'auto' }} />
+                {selectedExhibit.art[currentArt] && <img src={require(`../../images/${selectedExhibit.art[currentArt].image}.jpg`)} style={{ width: '70%', height: 'auto' }} />}
             </div>
 
             {/* Divider */}
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', position: 'relative', marginTop: '2.5rem' }}>
-                {selectedExhibit.art[currentArt].index > 0 ? <ViewControl goTo={() => goTo("back")} directionTo="back" /> : null}
+                {selectedExhibit.art[currentArt] && selectedExhibit.art[currentArt].index > 0 ? <ViewControl goTo={() => goTo("back")} directionTo="back" /> : null}
                 <div style={{ width: '80%', height: 1, borderTop: '2px solid #666666' }} />
-                {selectedExhibit.art[currentArt].index < selectedExhibit.art?.length - 1 ? <ViewControl goTo={() => goTo("forward")} directionTo="forward" /> : null}
+                {selectedExhibit.art[currentArt] && selectedExhibit.art[currentArt].index < selectedExhibit.art.length - 1 ? <ViewControl goTo={() => goTo("forward")} directionTo="forward" /> : null}
             </div>
 
             {/* Text */}
 
             <div style={{ margin: '2.5rem 2rem', display: 'flex', overflow: 'auto', overflowX: 'hidden' }}>
-                <p style={{ fontSize: '1.4rem', fontFamily: 'Roboto', fontWeight: 400 }}> {selectedExhibit.art[currentArt].text} </p>
+                <p style={{ fontSize: '1.4rem', fontFamily: 'Roboto', fontWeight: 400 }}> {selectedExhibit.art[currentArt] && selectedExhibit.art[currentArt].text} </p>
             </div>
         </div>
 
