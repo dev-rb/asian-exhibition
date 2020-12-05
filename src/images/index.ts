@@ -12,6 +12,7 @@ const iArt2 = 'This piece was chosen to engage with all Americans. It showcases 
 
 const fArt1 = '“The Filipino’s First Bath. McKinley - Oh, you dirty boy!” This cartoon implies that the Filipinos are dirty and contaminated, only to take a bath after becoming a part of the United States’ territory. The US is the one that is sanitizing them and making them civilized. Dark skinned and primitive, often mistakenly depicted as Africans.';
 const fArt2 = 'This is a newspaper clipping that portrays the transformation of the Filipino from being "barbaric" to a "civilized man". This clipping shows that before the expansion, the Filipinos were barbaric and violent, but after the expansion, they became civilized.';
+const fArt3 = 'In one of the newspaper articles, titled “Filipinos Not Ready For Self-Government”, the writer claims that Filipinos are not ready for self-government because they only care about being freed and do not have the ability to self govern themselves. The newspaper states, “Says the people need kindergarten instruction in civil affairs - their sanitary wants”. The writer proceeds to support his claim by exclaiming that they are unsanitary since they wash their clothes in the stream that serves as their water supply.';
 
 export const JapaneseArt: Art[] = [
     { image: 'jArt1', text: jArt1, index: 0 },
@@ -33,6 +34,6 @@ export const IndianArt: Art[] = [
 
 export const FilipinoArt: Art[] = [
     { image: 'fArt1', text: fArt1, index: 0 },
-    { image: 'fArt2', text: fArt2, index: 1 }
-
+    { image: 'fArt2', text: fArt2, index: 1 },
+    { image: 'fArt3', text: fArt3, index: 2 }
 ]
