@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a25ec866d35ec9e20da1035fd5641510",
+    "revision": "113bb32acc6f1bf1ca9aa635b1820218",
     "url": "/asian-exhibition/index.html"
   },
   {
-    "revision": "1dad993b5378ccd10337",
-    "url": "/asian-exhibition/static/css/main.3a3f2ca7.chunk.css"
+    "revision": "ccfd52616c7dda8002a1",
+    "url": "/asian-exhibition/static/css/main.f79d29ab.chunk.css"
   },
   {
-    "revision": "53f7f06ebd7f7d60fcf9",
-    "url": "/asian-exhibition/static/js/2.5f2d31b4.chunk.js"
+    "revision": "8df382a9191e6caffa45",
+    "url": "/asian-exhibition/static/js/2.4754090c.chunk.js"
   },
   {
     "revision": "25ee36cecf3742d8e72fa8504c054097",
-    "url": "/asian-exhibition/static/js/2.5f2d31b4.chunk.js.LICENSE.txt"
+    "url": "/asian-exhibition/static/js/2.4754090c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1dad993b5378ccd10337",
-    "url": "/asian-exhibition/static/js/main.8fe0740d.chunk.js"
+    "revision": "ccfd52616c7dda8002a1",
+    "url": "/asian-exhibition/static/js/main.2f9488d4.chunk.js"
   },
   {
     "revision": "843c04b8cf02b620bdb8",
     "url": "/asian-exhibition/static/js/runtime-main.34f0cdce.js"
+  },
+  {
+    "revision": "39ba7e8db1efa3deafc85d5878cd53d6",
+    "url": "/asian-exhibition/static/media/FloorPlan.39ba7e8d.png"
   },
   {
     "revision": "31303fc9066744cae824a2eb8d09820b",
@@ -36,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/asian-exhibition/static/media/cArt2.6aa4a91d.jpg"
   },
   {
-    "revision": "8814b1b9cac013913849b3be84d787d0",
-    "url": "/asian-exhibition/static/media/cExhibitWH.8814b1b9.jpg"
+    "revision": "061727db59282c2d5fd2a2921613dd5a",
+    "url": "/asian-exhibition/static/media/cArt3.061727db.png"
+  },
+  {
+    "revision": "9278bb659171e00cb014daa885cd40cc",
+    "url": "/asian-exhibition/static/media/cArt4.9278bb65.png"
+  },
+  {
+    "revision": "0c4645ef055808357d3baf04efdc53ce",
+    "url": "/asian-exhibition/static/media/cExhibitWH.0c4645ef.jpg"
   },
   {
     "revision": "9f3e5bc5f5a793bcc8eb199aaed443de",
