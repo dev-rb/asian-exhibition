@@ -20,8 +20,8 @@ export interface ExhibitionState {
 }
 
 const initState: ExhibitionState = {
-    exhibits: [{ name: 'Chinese', selected: true, art: ChineseArt, design: 'cExhibitWH.jpg' }, { name: 'Japanese', selected: false, art: JapaneseArt, design: 'jExhibitWH.jpg' }, { name: 'Indian', selected: false, art: IndianArt, design: 'iExhibitWH.jpg' }, { name: 'Filipino', selected: false, art: FilipinoArt, design: 'fExhibitWH.jpg' }],
-    selectedExhibit: { name: 'Chinese', selected: true, art: ChineseArt, design: 'cExhibitWH.jpg' }
+    exhibits: [{ name: 'Filipino', selected: true, art: FilipinoArt, design: 'fExhibitWH.jpg' }, { name: 'Japanese', selected: false, art: JapaneseArt, design: 'jExhibitWH.jpg' }, { name: 'Indian', selected: false, art: IndianArt, design: 'iExhibitWH.jpg' }, { name: 'Chinese', selected: false, art: ChineseArt, design: 'cExhibitWH.jpg' }],
+    selectedExhibit: { name: 'Filipino', selected: true, art: FilipinoArt, design: 'fExhibitWH.jpg' }
 }
 
 export const exhibitionSlice = createSlice({

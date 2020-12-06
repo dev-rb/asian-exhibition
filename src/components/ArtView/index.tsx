@@ -26,7 +26,7 @@ const ArtView = () => {
         <div style={{ width: '40%', height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', border: '2px solid #EEEEEE' }}>
             {/* Image */}
             <div style={{ display: 'flex', alignSelf: 'center', justifyContent: 'center', minHeight: '40%', maxHeight: '40%', marginTop: '2rem' }}>
-                {selectedExhibit.art[currentArt] && <img src={require(`../../images/${selectedExhibit.art[currentArt].image}.jpg`)} style={{ width: '70%', height: 'auto' }} />}
+                {selectedExhibit.art[currentArt] && <img src={require(`../../images/${selectedExhibit.art[currentArt].image}`)} style={{ width: '70%', height: 'auto' }} />}
             </div>
 
             {/* Divider */}

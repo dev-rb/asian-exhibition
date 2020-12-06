@@ -6,21 +6,14 @@ import ArtView from './components/ArtView';
 import ExhibitView from './components/ExhibitView';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
+import Lobby from './components/Lobby';
 
 function App() {
 
   return (
     <Provider store={store}>
       <div className="App">
-        <Container maxWidth="xl" style={{ width: '100vw', height: '100vh' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', paddingLeft: '2rem' }}>
-            <Navbar />
-            <div style={{ display: 'flex', flexDirection: 'row' }}>
-              <ArtView />
-              <ExhibitView />
-            </div>
-          </div>
-        </Container>
+        <Lobby />
       </div>
     </Provider>
   );
