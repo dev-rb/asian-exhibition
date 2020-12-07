@@ -23,6 +23,10 @@ const Lobby = () => {
 
     const ref = React.useRef<HTMLDivElement>(null)
 
+    const enterExhibit = () => {
+        setEnter(true);
+    }
+
     const scrollDown = () => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
     }
@@ -37,15 +41,14 @@ const Lobby = () => {
                     <p className={styles.exhibitTitle}> “Contaminated: How Asian Americans Have Been Racialized as Carriers of Disease in the Past, and What It Means in the Present” </p>
 
                     <div className={styles.buttonsContainer}>
-                        <button className={styles.enterButton} onClick={() => setEnter(true)}>
+                        <button className={styles.enterButton} onClick={enterExhibit}>
                             <p className={styles.enterText}> Enter </p>
                         </button>
 
-                        <div className={styles.moreInfoButton} onClick={scrollDown}>
+                        <button className={styles.moreInfoButton} onClick={scrollDown}>
                             <p className={styles.moreInfoText}> More Info </p>
-                        </div>
+                        </button>
                     </div>
-
 
                 </div>
 

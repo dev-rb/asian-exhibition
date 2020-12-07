@@ -14,7 +14,7 @@ const Navbar = () => {
                 {exhibits.map((item, index) => <NavItem name={item.name} selected={item.selected} index={index} />)}
             </div>
             <div style={{ position: 'absolute', top: 0, right: -25 }}>
-                <div style={{ background: '#EEEEEE', width: '14rem', height: '4rem', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
+                <div style={{ background: '#E2E2E2', width: '14rem', height: '4rem', display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
                     <p style={{ fontSize: '2.2rem', fontFamily: 'Roboto', fontWeight: 400, color: '#AAAAAA' }}> ASIAN </p>
                     <p style={{ fontSize: '2.2rem', fontFamily: 'Roboto', fontWeight: 400, color: '#8D4BFF', marginLeft: -20 }}> 210 </p>
                 </div>
