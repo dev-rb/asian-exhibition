@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/asian-exhibition/static/css/main.b77530ba.chunk.css",
-    "main.js": "/asian-exhibition/static/js/main.b33c300e.chunk.js",
-    "main.js.map": "/asian-exhibition/static/js/main.b33c300e.chunk.js.map",
+    "main.js": "/asian-exhibition/static/js/main.e9a9464c.chunk.js",
+    "main.js.map": "/asian-exhibition/static/js/main.e9a9464c.chunk.js.map",
     "runtime-main.js": "/asian-exhibition/static/js/runtime-main.34f0cdce.js",
     "runtime-main.js.map": "/asian-exhibition/static/js/runtime-main.34f0cdce.js.map",
     "static/js/2.fd425afb.chunk.js": "/asian-exhibition/static/js/2.fd425afb.chunk.js",
     "static/js/2.fd425afb.chunk.js.map": "/asian-exhibition/static/js/2.fd425afb.chunk.js.map",
     "index.html": "/asian-exhibition/index.html",
-    "precache-manifest.d1d14a60c6cacdcff0d92c85d621da6f.js": "/asian-exhibition/precache-manifest.d1d14a60c6cacdcff0d92c85d621da6f.js",
+    "precache-manifest.3359f40cdb8f1a5fd6e84b0df5876183.js": "/asian-exhibition/precache-manifest.3359f40cdb8f1a5fd6e84b0df5876183.js",
     "service-worker.js": "/asian-exhibition/service-worker.js",
     "static/css/main.b77530ba.chunk.css.map": "/asian-exhibition/static/css/main.b77530ba.chunk.css.map",
     "static/js/2.fd425afb.chunk.js.LICENSE.txt": "/asian-exhibition/static/js/2.fd425afb.chunk.js.LICENSE.txt",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.34f0cdce.js",
     "static/js/2.fd425afb.chunk.js",
     "static/css/main.b77530ba.chunk.css",
-    "static/js/main.b33c300e.chunk.js"
+    "static/js/main.e9a9464c.chunk.js"
   ]
 }
