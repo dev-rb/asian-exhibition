@@ -1,28 +1,52 @@
-import { Container } from '@material-ui/core';
 import * as React from 'react';
 import lobbyWH from '../../images/lobbyWH.jpg';
 import ArtView from '../ArtView';
 import ExhibitView from '../ExhibitView';
 import Navbar from '../Navbar';
+import Presentation from '../Presentation';
+import TeamMember, { Member } from '../TeamMember';
+import styles from './lobbyStyles.module.css';
+
+const teamMembers: Member[] = [
+    { initials: 'BM', name: 'Brittany Moreno', job: 'Chinese Exhibit Expert' },
+    { initials: 'JW', name: 'Javiy Wang', job: 'Japanese Exhibit Expert' },
+    { initials: 'FT', name: 'Fahad Tahir', job: 'Indian Exhibit Expert' },
+    { initials: 'PL', name: 'Peiping Lin', job: 'Filipino Exhibit Expert' },
+    { initials: 'RB', name: 'Rahul Batra', job: 'Floor Plan Designer' },
+    { initials: 'LA', name: 'Dr. Linh An', job: 'Asian American Studies Expert' },
+]
+
 
 const Lobby = () => {
 
     const [enter, setEnter] = React.useState(false);
 
-    return (
-        <div style={{ width: '100vw', height: '100vh' }}>
-            {!enter && <div style={{ width: '100vw', height: '100vh', backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${lobbyWH})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center' }}>
-                <div style={{ display: 'flex', flexDirection: 'column', zIndex: 100, width: '100%', justifyContent: 'center', alignItems: 'flex-start' }}>
-                    <h1 style={{ color: '#EE3333', fontSize: '10rem', fontFamily: 'Roboto', fontWeight: 700, zIndex: 100, marginTop: '2rem', marginLeft: '4rem' }}> Welcome, </h1>
-                    <h2 style={{ color: '#B2B0B0', fontSize: '5rem', fontFamily: 'Roboto', fontWeight: 400, zIndex: 100, marginTop: '-5rem', marginLeft: '4rem' }}> To the Red Pandas Exhibit. </h2>
-                    <h3 style={{ color: 'white', fontSize: '2rem', fontFamily: 'Roboto', fontWeight: 300, zIndex: 100, marginTop: '1.4rem', marginLeft: '4rem' }}> Exhibit Title: </h3>
-                    <p style={{ width: '30rem', color: 'white', fontSize: '1.4rem', fontFamily: 'Roboto', fontWeight: 400, zIndex: 100, marginTop: '-0.8rem', marginLeft: '4rem' }}> “Contaminated: How Asian Americans Have Been Racialized as Carriers of Disease in the Past, and What It Means in the Present” </p>
+    const ref = React.useRef<HTMLDivElement>(null)
 
-                    <div onClick={() => setEnter(true)} style={{ width: '10rem', height: '2.8rem', background: '#8D4BFF', zIndex: 100, borderRadius: 200, marginLeft: '4rem', display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '1.8rem', cursor: 'pointer' }}>
-                        <p style={{ color: 'white', fontFamily: 'Roboto', fontWeight: 400, fontSize: '1.8rem' }}> Enter </p>
+    const scrollDown = () => {
+        ref.current?.scrollIntoView({ behavior: "smooth" });
+    }
+
+    return (
+        <div style={{ width: '100vw', height: '100vh', background: '#EEEEEE', position: 'relative', zIndex: 0 }}>
+            {!enter && <div className={styles.lobbyContainer}>
+                <div className={styles.introContainer}>
+                    <h1 className={styles.welcome}> Welcome, </h1>
+                    <h2 className={styles.redPandasExhibit}> To the Red Pandas Exhibit. </h2>
+                    <h3 className={styles.exhibitTitleLabel}> Exhibit Title: </h3>
+                    <p className={styles.exhibitTitle}> “Contaminated: How Asian Americans Have Been Racialized as Carriers of Disease in the Past, and What It Means in the Present” </p>
+
+                    <div className={styles.buttonsContainer}>
+                        <div className={styles.enterButton} onClick={() => setEnter(true)}>
+                            <p className={styles.enterText}> Enter </p>
+                        </div>
+
+                        <div className={styles.moreInfoButton} onClick={scrollDown}>
+                            <p className={styles.moreInfoText}> More Info </p>
+                        </div>
                     </div>
 
-                    <img src={require('../../images/FloorPlan.png')} style={{ zIndex: 100, marginLeft: '4rem', marginTop: '2.5rem' }} />
+
                 </div>
 
                 <div style={{ position: 'absolute', top: 0, right: 0 }}>
@@ -33,13 +57,46 @@ const Lobby = () => {
                 </div>
             </div>}
 
-            {enter && <div style={{ display: 'flex', flexDirection: 'column', paddingLeft: '2rem' }}>
-                <Navbar />
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    <ArtView />
-                    <ExhibitView />
+            {!enter &&
+                <div>
+                    <div ref={ref} className={styles.floorPlanContainer}>
+                        <div style={{ display: "flex", flexDirection: 'column', alignItems: 'center', marginTop: '-10rem' }}>
+                            <h1 className={styles.floorPlanLabel}> Floor Plan </h1>
+                            <div style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'center' }}>
+                                <p className={styles.floorPlanLabelForeign}>평면도</p>
+                                <p className={styles.floorPlanLabelForeign}>平面图</p>
+                                <p className={styles.floorPlanLabelForeign}>間取り</p>
+                                <p className={styles.floorPlanLabelForeign}>मंजिल की योजना</p>
+                            </div>
+                        </div>
+                        <div className={styles.floorPlanImageContainer}>
+                            <img className={styles.floorPlanImage} src={require('../../images/FloorPlan.png')} />
+                        </div>
+
+                        <p className={styles.floorPlanDescription}> This floor plan design allows the visitors to explore the exhibition one exhibit at a time. Allowing the visitors to take in all the information from one exhibit before moving to the next. The Chinese exhibit is at the end to show the past and present of Asian American discrimination in the United States. The last room is for "Stop AAPI Hate" which is a movement to help stop hate against Asian Americans. We raise awareness of this movement and encourage others to stand with it as well. Returning from the end of the exhibit to the front in this floor plan allows visitors to look at the exhibits another time before leaving.  </p>
+                    </div>
+
+                    <div className={styles.teamContainer}>
+                        <div>
+                            <h1 className={styles.teamLabel}> Meet the Team </h1>
+                            <div style={{ display: 'flex', flexDirection: 'row', width: '100%', justifyContent: 'center' }}>
+                                <p className={styles.teamLabelForeign}>팀 만나기</p>
+                                <p className={styles.teamLabelForeign}>见团队</p>
+                                <p className={styles.teamLabelForeign}>チームに会う</p>
+                                <p className={styles.teamLabelForeign}>टीम से मिलो</p>
+                            </div>
+                        </div>
+
+                        <div className={styles.teamMembersContainer}>
+                            {teamMembers.map((member) => <TeamMember initials={member.initials} name={member.name} job={member.job} />)}
+                        </div>
+                    </div>
                 </div>
-            </div>}
+
+            }
+
+
+            {enter && <Presentation />}
         </div>
     );
 }

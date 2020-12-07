@@ -1,0 +1,213 @@
+/* Landing Page */
+
+.lobbyContainer{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/lobbyWH.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.introContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20rem;
+}
+
+.welcome{
+    color: white;
+    font-size: 8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.redPandasExhibit{
+    color: #B2B0B0;
+    font-size: 4rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin-top: -4.5rem;
+}
+
+.exhibitTitleLabel{
+    color: #B2B0B0;
+    font-size: 2rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    margin-top: 1.2rem;
+    margin-left: 0.2rem;
+}
+
+.exhibitTitle{
+    width: 25rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin-top: -1.4rem;
+    margin-left: 0.2rem;
+}
+
+.buttonsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 24rem;
+    margin-top: 2rem;
+}
+
+.enterButton{
+    width: 10rem;
+    height: 2.8rem;
+    background: #8D4BFF;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.enterText{
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.moreInfoButton{
+    width: 10rem;
+    height: 2.8rem;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.moreInfoText{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* Floor Plan */
+
+.floorPlanContainer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background: #EEEEEE;
+}
+
+.floorPlanLabel{
+    color: #E2E2E2;
+    font-size: 21rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.floorPlanLabelForeign{
+    color: #8D4BFF;
+    opacity: 0.4;
+    font-size: 2.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    margin-top: -14rem;
+    margin-left: 4rem;
+}
+
+.floorPlanImageContainer{
+    width: 50rem;
+    height: auto;
+    border: 2px solid #D4D4D4;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+    margin-top: -6rem;
+}
+
+.floorPlanImage{
+    width: 90%;
+    height: auto;
+}
+
+.floorPlanDescription{
+    width: 34rem;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Meet the Team Section */
+
+.teamContainer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EEEEEE;
+    margin-bottom: 20rem;
+}
+
+.teamLabel{
+    color: #E2E2E2;
+    font-size: 21rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.teamLabelForeign{
+    color: #8D4BFF;
+    opacity: 0.4;
+    font-size: 2.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    margin-top: -14rem;
+    margin-left: 4rem;
+}
+
+.teamMembersContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 4rem;
+}
+
+.teamMember{
+
+}
+
+.teamMemberAvatar{
+
+}
+
+.teamMemberInitials{
+
+}
+
+.teamMemberName{
+
+}
+
+.teamMemberJob{
+
+}
+
+

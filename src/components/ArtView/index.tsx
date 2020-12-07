@@ -23,7 +23,7 @@ const ArtView = () => {
     }, [selectedExhibit])
 
     return (
-        <div style={{ width: '40%', height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', border: '2px solid #EEEEEE' }}>
+        <div style={{ width: '40%', height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', border: '2px solid #E2E2E2', background: '#F8F8F8' }}>
             {/* Image */}
             <div style={{ display: 'flex', alignSelf: 'center', justifyContent: 'center', minHeight: '40%', maxHeight: '40%', marginTop: '2rem' }}>
                 {selectedExhibit.art[currentArt] && <img src={require(`../../images/${selectedExhibit.art[currentArt].image}`)} style={{ width: '70%', height: 'auto' }} />}
@@ -39,7 +39,7 @@ const ArtView = () => {
             {/* Text */}
 
             <div style={{ margin: '2.5rem 2rem', display: 'flex', overflow: 'auto', overflowX: 'hidden' }}>
-                <p style={{ fontSize: '1.4rem', fontFamily: 'Roboto', fontWeight: 400 }}> {selectedExhibit.art[currentArt] && selectedExhibit.art[currentArt].text} </p>
+                <p style={{ fontSize: '1.4rem', fontFamily: 'Roboto', fontWeight: 400, color: '#666666' }}> {selectedExhibit.art[currentArt] && selectedExhibit.art[currentArt].text} </p>
             </div>
         </div>
 

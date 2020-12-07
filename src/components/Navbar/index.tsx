@@ -50,7 +50,7 @@ const NavItem = ({ name, selected, index }: NavItemProps) => {
 
     return (
         <div ref={textRef} onClick={goTo} style={{ marginLeft: '2rem', position: 'relative', cursor: 'pointer', userSelect: 'none' }}>
-            <p style={{ fontSize: '1.875rem', fontFamily: 'Roboto', fontWeight: 300, color: selected ? '#222222' : '#D2D2D2', userSelect: 'none' }}> {name} </p>
+            <p style={{ fontSize: '1.875rem', fontFamily: 'Roboto', fontWeight: 400, color: selected ? '#666666' : '#D2D2D2', userSelect: 'none' }}> {name} </p>
             {selected ? <div style={{ backgroundImage: `url(${bg})`, backgroundRepeat: 'no-repeat', width: '4rem', height: '4rem', backgroundSize: 'contain', position: 'absolute', top: selectedPos.top - 5, left: selectedPos.left - 10, zIndex: -1 }} /> : null}
         </div>
     );
