@@ -37,9 +37,9 @@ const Lobby = () => {
                     <p className={styles.exhibitTitle}> “Contaminated: How Asian Americans Have Been Racialized as Carriers of Disease in the Past, and What It Means in the Present” </p>
 
                     <div className={styles.buttonsContainer}>
-                        <div className={styles.enterButton} onClick={() => setEnter(true)}>
+                        <button className={styles.enterButton} onClick={() => setEnter(true)}>
                             <p className={styles.enterText}> Enter </p>
-                        </div>
+                        </button>
 
                         <div className={styles.moreInfoButton} onClick={scrollDown}>
                             <p className={styles.moreInfoText}> More Info </p>
