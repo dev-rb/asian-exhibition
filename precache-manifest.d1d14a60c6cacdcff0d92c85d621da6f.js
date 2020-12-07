@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "efb3986517b836877663a6c635166580",
+    "revision": "a3b90a22296a27010a47c92c24d3cb41",
     "url": "/asian-exhibition/index.html"
   },
   {
-    "revision": "3e16b3b89975eb029268",
-    "url": "/asian-exhibition/static/css/main.ce123dff.chunk.css"
+    "revision": "131b704e1f55aad2e293",
+    "url": "/asian-exhibition/static/css/main.b77530ba.chunk.css"
   },
   {
     "revision": "a391313b2e4f2c722c37",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/asian-exhibition/static/js/2.fd425afb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3e16b3b89975eb029268",
-    "url": "/asian-exhibition/static/js/main.7f9bded8.chunk.js"
+    "revision": "131b704e1f55aad2e293",
+    "url": "/asian-exhibition/static/js/main.b33c300e.chunk.js"
   },
   {
     "revision": "843c04b8cf02b620bdb8",
