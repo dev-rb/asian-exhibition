@@ -34,6 +34,9 @@ const fArt1 = '“The Filipino’s First Bath. McKinley - Oh, you dirty boy!” 
 const fArt2 = 'This is a newspaper clipping that portrays the transformation of the Filipino from being "barbaric" to a "civilized man". This clipping shows that before the expansion, the Filipinos were barbaric and violent, but after the expansion, they became civilized.';
 const fArt3 = 'In one of the newspaper articles, titled “Filipinos Not Ready For Self-Government”, the writer claims that Filipinos are not ready for self-government because they only care about being freed and do not have the ability to self govern themselves. The newspaper states, “Says the people need kindergarten instruction in civil affairs - their sanitary wants”. The writer proceeds to support his claim by exclaiming that they are unsanitary since they wash their clothes in the stream that serves as their water supply.';
 
+const aapi1 = 'In response to the rising number of incidents involving racially motivated violence, Stop Asian American Pacific Islander (AAPI) Hate has made it easier for those who have been attacked to file a report that is language-accessible. It’s a call to action for communities to come together and form a united front against racism. ';
+const aapi2 = 'On February 29th, 2020, Chinese-American leaders gathered in San Francisco’s Chinatown to hold a rally in response to the increase of xenophobia following the news of the Novel Coronavirus outbreak.';
+
 export const JapaneseArt: Art[] = [
     { image: 'jArt1.jpg', text: jArt1, index: 0 },
     { image: 'jArt2.jpg', text: jArt2, index: 1 }
@@ -59,3 +62,10 @@ export const FilipinoArt: Art[] = [
     { image: 'fArt2.jpg', text: fArt2, index: 1 },
     { image: 'fArt3.jpg', text: fArt3, index: 2 }
 ]
+
+export const AAPI: Art[] = [
+    { image: 'aapi1.jpg', text: aapi1, index: 0 },
+    { image: 'aapi2.jpg', text: aapi2, index: 1 },
+
+]
+
